@@ -1,0 +1,17 @@
+@mixin font($fs,$fw,$fz,$lh,$ls,$color) {
+
+	font-style: $fs;
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: $ls;
+	color: $color;
+   
+}
+
+@mixin centerFlex{
+	display: flex;
+	align-items: center;
+	// justify-content: center;
+}
+	

@@ -1,0 +1,28 @@
+.sosial-list{
+	@include centerFlex;
+   justify-content: center;
+
+}
+
+.sosial-list__item:not(:last-child){
+   margin-right: 10px;
+}
+
+.sosial-list__link{ 
+	@include centerFlex;
+   justify-content: center;  
+   width: 44px;
+   height: 44px;   
+   border-radius: 50%;
+   fill: $icon; 
+   
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, 
+&:focus
+{
+   fill: $white;
+   background-color: $accent;
+} 
+}
