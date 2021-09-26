@@ -1,5 +1,4 @@
 
-
 .ourteam{
    padding-top: 94px;
    padding-bottom:94px;  
@@ -13,8 +12,6 @@
    margin-top: calc(-1 * 30px);
 } 
 .ourteam__item{
-   // width: 100%;
-   // flex-basis: calc(100% / 4 - 30px);
    margin-left: 30px;
    margin-top: 30px;
    background: $white;
@@ -26,7 +23,6 @@
    }
       @media screen and (min-width: 1200px){
          flex-basis: calc(100% / 4 - 30px);
-
    }   
 }
 
@@ -39,7 +35,6 @@
 	@include font(normal, 500, 16px, 1.19, 0.03em, $title-text);
    
 	text-align: center;
-
    margin-bottom: 10px;
 
 }
