@@ -5,18 +5,17 @@
 } 
 .footer__container{
    text-align: center;
-   // display: flex;
-   // align-items: baseline;
+
    @media screen and (min-width: 768px){
-     display: flex;
-     flex-wrap: wrap;
-     align-items: baseline;
-     justify-content: space-around;
- }
- @media screen and (min-width: 1200px){
-    text-align: left;
-    justify-content: left;
- }
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+   justify-content: space-around;
+   }
+   @media screen and (min-width: 1200px){
+   text-align: left;
+   justify-content: left;
+   }
 }
 
 .footer__logo{ 
@@ -37,7 +36,7 @@
 
 .footer__logo--accent:hover{
    color: $accent;
- }
+}
 
 .footer-contact__item:not(:first-child){
    margin-top: 10px;
@@ -62,8 +61,9 @@
 &:hover,
 &:focus {
    color: $accent;
+   }
 }
-}
+
 .footer-sosial__item{
    width: 44px;
    height: 44px;  
@@ -75,28 +75,29 @@
 
 .footer__sosial{  
    @media screen and (max-width: 767px){
-     margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px){
-    margin-left: 70px; 
-}
+   margin-bottom: 60px;
+   }
+
+   @media screen and (min-width: 1200px){
+   margin-left: 70px; 
+   }
 }
 
 .footer__adress{  
    @media screen and (max-width: 767px){
-     margin-bottom: 60px;
+   margin-bottom: 60px;
+   }
 }
-}
-
-  
 
 .footer-sosial__list{
    display: flex;
    justify-content: center;
 }
+
 .footer-sosial__icon{  
    fill: $white
 }
+
 .footer-sosial__link{
    display: flex;
    align-items: center;
@@ -116,14 +117,15 @@
    margin-bottom: 20px;
 }
 .footer__mail{ 
-  
    @media screen and (min-width: 768px){
-      margin-top: 60px;
- }
- @media screen and (min-width: 1200px){
-     margin-left: auto;
+   margin-top: 60px;
+   }
+
+   @media screen and (min-width: 1200px){
+   margin-left: auto;
+   }
 }
-}
+
 .fot-mail{  
    font-size: 16px;
    line-height: 1.25;
@@ -137,17 +139,17 @@
    border-radius: 4px;
 
    @media screen and (min-width: 768px){
-     width: 450px;
- }
- @media screen and (min-width: 1200px){
-    width: 358px;
+   width: 450px;
+   }
+   @media screen and (min-width: 1200px){
+   width: 358px;
 }
 
    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:focus,
 &:hover{
    border: 1px solid $accent;
-}
+   }
 }
 
 .footer__button{ 
@@ -159,22 +161,24 @@
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    cursor: pointer;
-   border: none; 
-   // margin-left: 10px;
+   border: none;   
    margin: 0 auto;
-       @media screen and (max-width: 1199px){
-        margin-top: 20px;
-   } @media screen and (min-width: 1200px){
-      margin-left: 12px;
-   }
 
+   @media screen and (max-width: 1199px){
+   margin-top: 20px;
+   } 
+   @media screen and (min-width: 1200px){
+   margin-left: 12px;
+   }
 }
+
 .submit__icon{   
    margin-left: 10px;
 }
+
 .footer__form{
    @media screen and (min-width: 1200px){
       display: flex;
-    align-items: center;
- }
+   align-items: center;
+   }
 }
