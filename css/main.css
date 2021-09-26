@@ -26,7 +26,7 @@ li {
   list-style: none;
 }
 
-img {
+image {
   display: block;
   max-width: 100%;
 }
@@ -58,19 +58,19 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .container .container {
     width: 1200px;
   }
 }
@@ -189,12 +189,6 @@ a {
 }
 
 .page-header__logo {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
   font-family: 'Raleway',sans-serif;
   display: block;
   text-decoration: none;
@@ -203,6 +197,39 @@ a {
 
 .page-header__logo:hover, .page-header__logo:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header__logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .page-header__logo--color {
@@ -245,15 +272,68 @@ a {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
 .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }
 
 .about {
@@ -338,6 +418,10 @@ a {
   text-align: center;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
+}
+
+.servises {
+  display: none;
 }
 
 .ourteam {
@@ -756,12 +840,15 @@ a {
 }
 
 .modal-title {
+  text-align: center;
   display: contents;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 12px;
 }
 
 .modal-form-input {
@@ -785,11 +872,13 @@ a {
 }
 
 .modal-form-lable {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
   color: #757575;
-  display: block;
 }
 
 .modal-form-icon {
@@ -822,13 +911,15 @@ a {
 }
 
 .modal-comment:hover, .modal-comment:focus {
-  border: 1px soli #2196F3;
+  border: 1px solid #2196F3;
   fill: #2196F3;
 }
 
 .modal-comment::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -836,8 +927,11 @@ a {
 .check-lable {
   display: flex;
   align-items: center;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -877,11 +971,13 @@ a {
 }
 
 .button.mod {
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  padding: 10px 55px;
   letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 55px;
   display: block;
   margin: 0 auto;
   background: #2196F3;

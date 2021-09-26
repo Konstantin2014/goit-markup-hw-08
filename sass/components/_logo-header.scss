@@ -1,7 +1,6 @@
-.page-header__logo{    
-	@include font(normal, bold, 26px, 1.19, 0.03em, $title-text);
-
+.page-header__logo{ 
    font-family: 'Raleway',sans-serif;
+	
 	display: block;
 	text-decoration: none;
    
@@ -11,11 +10,26 @@
 	&:focus{
 		color: $accent;
 	}
+	@media screen and (min-width: 480px){      
+		@include font(normal, bold, 24px, 1.17, 0.03em, $title-text);
+		
+	
+	}
 
+   @media screen and (min-width: 768px){
+		@include font(normal, bold, 24px, 1.17, 0.03em, $title-text);
+		
+	
+		}
+	
+   @media screen and (min-width: 1200px){
+		@include font(normal, bold, 26px, 1.19, 0.03em, $title-text);
+      
+		}
 }
 
 .page-header__logo--color{
    color: $accent;
 } 
-   
+
 
