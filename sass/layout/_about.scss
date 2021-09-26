@@ -1,5 +1,10 @@
 .about{
-   padding-top: 94px;   
+   padding-top: 60px;
+   padding-bottom: 60px; 
+   @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px; 
+   }  
 } 
 
 .about__thumb{
@@ -14,10 +19,9 @@
 
 .about__list{
    display: flex; 
-   flex-wrap: wrap;
-   margin: 15px;    
-
+   flex-wrap: wrap;   
 }
+
 .about__item{
    margin: 15px; 
    @media screen and (min-width: 768px){
@@ -26,13 +30,8 @@
    }
    @media screen and (min-width: 1200px){
       flex-basis: calc(100% / 4 - 30px);
-      
    }   
-   // flex-basis: calc((100% - 90px) / 4);
 
-   // &:not(:last-child){
-   //    margin-right: 30px;
-   // }
 }
 .about__title{ 
 	@include font(normal, bold, 14px, 1.14, 0.03em, $title-text); 
@@ -40,14 +39,11 @@
 	margin-bottom: 10px; 
    text-align: center;
    text-transform: uppercase;
-   
 }
+
 .about__text{
 	@include font(normal, normal, 14px, 1.71, 0.03em, $text);    
    
 }
 
-   @media screen and (min-width: 480px){
-         
-   }
-  
+

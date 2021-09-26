@@ -261,6 +261,13 @@ a {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
   font-style: normal;
   font-weight: 900;
@@ -272,17 +279,6 @@ a {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     font-style: normal;
@@ -291,24 +287,18 @@ a {
     line-height: 1.61;
     letter-spacing: 0.06em;
     color: #ffffff;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
 .title {
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #212121;
-  }
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 @media screen and (min-width: 768px) {
@@ -335,7 +325,15 @@ a {
 }
 
 .about {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about__thumb {
@@ -352,7 +350,6 @@ a {
 .about__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px;
 }
 
 .about__item {
@@ -434,9 +431,16 @@ a {
 }
 
 .ourteam {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
+}
+
+@media screen and (min-width: 1200px) {
+  .ourteam {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .ourteam__list {
@@ -521,8 +525,15 @@ a {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__list {
