@@ -283,8 +283,8 @@ a {
   .hero {
     font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
+    font-size: 44px;
+    line-height: 1.37;
     letter-spacing: 0.06em;
     color: #ffffff;
   }
@@ -899,14 +899,21 @@ a {
 .modal {
   padding: 40px;
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .btn-open {
@@ -947,18 +954,24 @@ a {
 
 .modal-title {
   text-align: center;
-  display: contents;
+  display: flex;
   margin-bottom: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    display: contents;
+  }
+}
+
 .modal-form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -975,6 +988,13 @@ a {
 .modal-form-input:focus ~ .modal-form-icon,
 .modal-form-input:hover ~ .modal-form-icon {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .modal-form-lable {
@@ -1004,7 +1024,7 @@ a {
 }
 
 .modal-comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1030,15 +1050,32 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-comment {
+    width: 448px;
+  }
+}
+
 .check-lable {
   display: flex;
   align-items: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-lable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .icon-dogovor {
@@ -1060,8 +1097,24 @@ a {
   border: 2px solid #2196F3;
 }
 
-.dogovor {
+.dogovor-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .dogovor-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
 }
 
 .checkbox.is-hidden {
@@ -1090,5 +1143,22 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+@media screen and (min-width: 480px) {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

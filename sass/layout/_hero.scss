@@ -12,7 +12,22 @@
    url(../images/Img.jpg);
    background-repeat: no-repeat;
    background-position: center;
-   background-size: cover;  
+   background-size: cover; 
+   @media screen and (min-width: 480px){
+   //    background-image: url(../imges/Header mobile1.jpg);
+   //    @media (min-device-pixel-ratio: 2){
+   //      background-image: url(../imges/Header mobile2.jpg);
+   //    }
+
+     
+   }
+
+   @media screen and (min-width: 768px){
+     
+   }
+   @media screen and (min-width: 1200px){
+     
+   }   
 
 	&__title{  
 		@include font(normal, 900, 26px, 1.61, 0.06em, $white); 
@@ -22,7 +37,7 @@
       }
 
       @media screen and (min-width: 1200px){
-      @include font(normal, 900, 26px, 1.61, 0.06em, $white); 
+      @include font(normal, 900, 44px, 1.37, 0.06em, $white); 
       
       }
 }
