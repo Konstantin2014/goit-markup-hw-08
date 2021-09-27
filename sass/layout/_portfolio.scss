@@ -1,13 +1,23 @@
 /* стилизация portfolio */
-.portfolio-button{    
-   margin-bottom: 50px;
+.portfolio-button{ 
+   padding-bottom: 40px; 
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   @media screen and (min-width: 768px){
+     
+   
+      }
+   @media screen and (min-width: 1200px){
+      padding-bottom: 50px;   
+      justify-content: center;
+      }   
+
 }
 .portfolio-button .item-portfolio + .item-portfolio{
    margin-left: 8px;
 }
 .button-portfolio{
+   margin-top: 21px;
    padding: 6px 22px;
    border-radius: 4px;
    font-weight: 500;
@@ -32,7 +42,18 @@
    display: flex;
    flex-wrap: wrap;
    margin-top: -30px;
-   margin-left: -30px;  
+   margin-left: -30px;
+
+.item-portfolio{
+   @media screen and (min-width: 768px){
+      flex-basis: calc(100% / 2 - 30px);    
+   }
+   @media screen and (min-width: 1200px){
+      flex-basis: calc(100% / 3 - 30px);
+   }
+}
+
+  
 }
 .image-portfolio .item-portfolio {
    margin-left: 30px;
@@ -76,8 +97,13 @@
 }
 }
 .portfolio{
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+     
+      }   
 }
 .portfolio-title{   
    color:$title-text;   

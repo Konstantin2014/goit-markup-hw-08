@@ -1,12 +1,18 @@
 .page-header{
+   padding-top: 16px;
+   padding-bottom: 16px;
    border-bottom: 1px solid #ECECEC;
 }
 .page-header__container{
    @include centerFlex;
+   justify-content: space-between;
+
 }
 
+
 .site-nav{   
-	margin-left: 93px; 
+	margin-left: 93px;
+   display: none; 
 }
 
 .site-nav__list{
@@ -15,7 +21,7 @@
 .site-nav__item{
    &:not(:last-child){
    margin-right: 50px; 
-  
+
 }
 }
 
@@ -69,6 +75,7 @@
 .auth-nav{
    @include centerFlex;
    margin-left: auto;
+   display: none;
 } 
 .auth-nav__item:not(:last-child){
    margin-right: 50px;
@@ -103,9 +110,22 @@
     fill: currentColor;
 }
 
+.mobile{
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   background-color: $white;
+   top: 0;
+   left: 0;
+}
+.icon-cross{
+   
+}
 
-@media screen and (min-width: 480px){
-}    
+.mob-menu__list{
+
+}
+
 
 @media screen and (min-width: 768px){
    

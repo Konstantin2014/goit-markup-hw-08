@@ -9,4 +9,24 @@
 	@include font(normal, bold, 16px, 1.88, 0.06em, $white); 
 }
 
+.mobile-menu{  
+   display: flex;
+   justify-content: flex-end;
+   margin-left: 0 auto;  
+   padding: 21px 25px;
+   border: none;
+   background-color: transparent;
+   
+   
+}
+// .menu-buttom .icon-cross{
+//    display: none;
+// }
+// .menu-buttom.is-open .icon-cross{
+//    display: block;
+// }
+// .menu-buttom.is-open .icon-menu{
+//    display: none;
+// }  
+
 
