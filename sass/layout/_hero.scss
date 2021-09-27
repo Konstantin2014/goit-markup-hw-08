@@ -1,43 +1,59 @@
 .hero{
    padding-top: 118px; 
    padding-bottom: 118px;  
-   text-align: center;
-   @media screen and (min-width: 1200px){
+   text-align: center;  
+   @media screen and (min-width: 1200px){    
       padding-top: 200px;
-      padding-bottom: 200px; 
-   }  
-   
+      padding-bottom: 200px;    
+   }    
    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)), 
-   url(../images/Img.jpg);
+   rgba(47, 48, 58, 0.4)), url(/images/Header_mobile1.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
-   @media screen and (min-width: 480px){
-   //    background-image: url(../imges/Header mobile1.jpg);
-   //    @media (min-device-pixel-ratio: 2){
-   //      background-image: url(../imges/Header mobile2.jpg);
-   //    }
-
-     
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(/images/Header_mobile2.jpg);
    }
 
-   @media screen and (min-width: 768px){
-     
+   @media screen and (min-width: 481px){
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(/images/Header_tablet1.jpg); 
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), 
+         url(/images/Header_tablet2.jpg);
    }
-   @media screen and (min-width: 1200px){
-     
+   }  
+   @media screen and (min-width: 769px){
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(/images/Header_desktop1.jpg); 
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), 
+         url(/images/Header_desktop2.jpg);
+   }
+   }
    }   
 
-	&__title{  
+.hero__title{  
 		@include font(normal, 900, 26px, 1.61, 0.06em, $white); 
-		
+      margin-left: auto;
+      margin-right: auto;
 		margin-bottom: 30px;    
 		text-transform: uppercase; 
-      }
 
       @media screen and (min-width: 1200px){
       @include font(normal, 900, 44px, 1.37, 0.06em, $white); 
-      
+
       }
 }
