@@ -9,15 +9,45 @@
 	@include font(normal, bold, 16px, 1.88, 0.06em, $white); 
 }
 
-.mobile-menu{  
-   display: flex;
-   justify-content: flex-end;
-   margin-left: 0 auto;  
-   padding: 21px 25px;
+.menu-open{    
+   padding: 21px 25px 8px 420px;
    border: none;
    background-color: transparent;
+   position: absolute;
+   cursor: pointer;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
+   &:hover,
+   &:focus{
+      fill: $accent;
+   }
+   @media screen and (min-width: 768px){
+      display: none;
+      }
+      @media screen and (min-width: 1200px){
+      display: none;
+      } 
+}
+.menu-close{
+   padding: 24px 25px 8px 433px;
+   border: none;
+   background-color: transparent;
+   position: absolute;
+   cursor: pointer;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
+   &:hover,
+   &:focus{
+      fill: $accent;
+   }
+   @media screen and (min-width: 768px){
+      display: none;
+      }
+      @media screen and (min-width: 1200px){
+      display: none;
+      } 
+ 
+
 }
 // .menu-buttom .icon-cross{
 //    display: none;
