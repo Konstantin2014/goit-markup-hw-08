@@ -143,6 +143,7 @@
 }
 
 .mobile{
+   padding-left: 40px ;  
    z-index: 3; 
    width: 100vw;
    height: 100vh;
@@ -167,8 +168,7 @@
 }
 
 .mob-menu__item{
-   padding-top: 48px;
-   padding-left: 40px;
+   padding-top: 48px; 
    @include font(normal, 500, 40px, 1.18, 0.02em, $title-text);
 
   
@@ -192,22 +192,26 @@
 
 .mob-menu__call{
    padding-top: 302px;
-   padding-left: 40px;
+  
    @include font(normal, 500, 34px, 1.18, 0.02em, $accent);
 }
 .mob-menu__mail{
-   padding-left: 40px;
+   
    padding-top: 32px;
    @include font(normal, 500, 24px, 1.17, 0.02em, $text);
 }
-.mob-menu__soc{ 
+.mob-menu__soc{
+  
    padding-top: 64px;
-   padding-left: 40px;
+   padding-right: 20px;
+ 
    @include font(normal, 500, 18px, 1.22, 0.02em, $accent);
 
 }
-
-.mob-menu__sosial{   
+.mob-menu__list{
+ 
+}
+.mob-menu__sosial{  
    display: flex;
 }
 

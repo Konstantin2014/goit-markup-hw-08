@@ -79,7 +79,8 @@
    }
 
    @media screen and (min-width: 1200px){
-   margin-left: 70px; 
+   margin-left: 70px;
+  
    }
 }
 
@@ -117,7 +118,8 @@
    margin-bottom: 20px;
 }
 .footer__mail{ 
-   @media screen and (min-width: 768px){
+   @media screen and (min-width: 768px)
+   and (max-width: 1199px){
    margin-top: 60px;
    }
 

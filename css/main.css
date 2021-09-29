@@ -242,6 +242,7 @@ a {
 }
 
 .mobile {
+  padding-left: 40px;
   z-index: 3;
   width: 100vw;
   height: 100vh;
@@ -272,7 +273,6 @@ a {
 
 .mob-menu__item {
   padding-top: 48px;
-  padding-left: 40px;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -299,7 +299,6 @@ a {
 
 .mob-menu__call {
   padding-top: 302px;
-  padding-left: 40px;
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -309,7 +308,6 @@ a {
 }
 
 .mob-menu__mail {
-  padding-left: 40px;
   padding-top: 32px;
   font-style: normal;
   font-weight: 500;
@@ -321,7 +319,7 @@ a {
 
 .mob-menu__soc {
   padding-top: 64px;
-  padding-left: 40px;
+  padding-right: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -384,7 +382,7 @@ a {
 }
 
 .menu-open {
-  padding: 21px 25px 8px 420px;
+  padding: 21px 25px 8px 433px;
   border: none;
   background-color: transparent;
   position: absolute;
@@ -409,7 +407,7 @@ a {
 }
 
 .menu-close {
-  padding: 24px 25px 8px 433px;
+  padding: 24px 25px 8px 396px;
   border: none;
   background-color: transparent;
   position: absolute;
@@ -447,6 +445,7 @@ a {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
@@ -924,7 +923,7 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__mail {
     margin-top: 60px;
   }
@@ -1009,6 +1008,12 @@ a {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-button {
     padding-bottom: 50px;
@@ -1016,12 +1021,16 @@ a {
   }
 }
 
+.portfolio-item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
 .portfolio-button .item-portfolio + .item-portfolio {
   margin-left: 8px;
 }
 
 .button-portfolio {
-  margin-top: 21px;
   padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
